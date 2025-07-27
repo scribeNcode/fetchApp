@@ -35,7 +35,7 @@ function App() {
 
   return (
     <>
-      <h1>Users List</h1>
+      <h1>List of all our current Users</h1>
       {errorm && <p>Error : {errorm}</p>}
       {isLoading && <h2>Loading...</h2>}
       <div>{!errorm && !isLoading && <ListComponent items={users} />}</div>

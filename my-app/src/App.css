@@ -1,0 +1,10 @@
+h1{
+    text-align: center;
+    margin: 1rem 0;
+}
+
+@media screen  and (max-width:425px){
+h1{
+    font-size: 1.3rem;
+}
+}

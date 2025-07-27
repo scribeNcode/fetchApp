@@ -1,16 +1,17 @@
+import "./ListComponent.css"
 const ListComponent = ({ items }) => {
   if (!items.length) return <p>No items to display.</p>;
 
   return (
-    <div>
+    <ol className="userWrapper">
       {items.map((user) => (
-        <ul key={user.id}>
-        <li><h1>{user.name}</h1></li>
-        <li><p>{user.username}</p></li>
-        </ul>
+        <li className="eachList" key={user.id}>
+        <strong>{user.name}</strong>
+        <div>{user.username}</div>
+        </li>
 
       ))}
-    </div>
+    </ol>
   );
 };
 
